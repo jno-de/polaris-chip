@@ -19,6 +19,12 @@
     polaris-chip {
       margin: 16px;
     }
+    my-card {
+      --my-card-bg: rgb(149, 208, 220);
+    }
+    h1 {
+      text-align: center;
+    }
   </style>
   <title>polaris-chip / my-card</title>
 </head>
@@ -32,11 +38,50 @@
   <polaris-chip title="Grants and donations"></polaris-chip>
 
   <h1>my-card</h1>
-  <my-card img="https://upload.wikimedia.org/wikipedia/commons/6/60/Charli_XCX_-_Brat_%28album_cover%29.png" title="Charli XCX" desc="Tune into Charli XCX's newest album! It's been named Album of the Summer!" link = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"></my-card>
-  <my-card img="https://i.etsystatic.com/9976142/r/il/86760d/4088127137/il_1588xN.4088127137_s9ev.jpg" title="CHARLIE THE UNICORN" desc="Tune into CHARLIE THE UNICORN's newest album! It's been named Album of the UNICORN!" link = "https://www.youtube.com/watch?v=bKd_2vqPrmU"></my-card>
-  <my-card img="https://live-production.wcms.abc-cdn.net.au/064a119ef5f94d92afcc4da13a9fd43b" title="Charlie and the Chocolate Factory" desc="gene wilder wonka > johnny depp wonka" link = "https://www.youtube.com/watch?v=1y8aYd9uqFY"></my-card>
-  <my-card img="https://static.wixstatic.com/media/449abe_5bcdc480851443d6b592c87fa3552f4e~mv2.jpg/v1/fill/w_764,h_764,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/cb-color.jpg" title="Charlie Brown" desc="me when the football" link = "https://www.youtube.com/watch?v=MmFfTJlIvhQ"></my-card>
-  <my-card img="https://media.tenor.com/QfkhhJkElT4AAAAe/yippee.png" title="YIPPEE" desc="i ran out of charlies" link = "https://www.youtube.com/watch?v=Qu7KFMn54Bk"></my-card>
+  
+  <my-card
+    img="https://upload.wikimedia.org/wikipedia/commons/6/60/Charli_XCX_-_Brat_%28album_cover%29.png" 
+    title="Charli XCX" 
+    link="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+    <p slot="desc">Tune into Charli XCX's newest album! It's been named Album of the Summer!</p>
+  </my-card>
+
+  <my-card
+    img="https://i.etsystatic.com/9976142/r/il/86760d/4088127137/il_1588xN.4088127137_s9ev.jpg"
+    title="CHARLIE THE UNICORN"
+    link = "https://www.youtube.com/watch?v=bKd_2vqPrmU">
+    <p slot="desc">Tune into <em>CHARLIE THE UNICORN's</em> newest album! It's been named Album of the <em>UNICORN!</em></p>
+  </my-card>
+
+  <my-card
+    img="https://live-production.wcms.abc-cdn.net.au/064a119ef5f94d92afcc4da13a9fd43b"
+    title="Charlie and the Chocolate Factory"
+    link = "https://www.youtube.com/watch?v=1y8aYd9uqFY">
+    <p slot="desc">gene wilder wonka > johnny depp wonka</p>
+  </my-card>
+
+  <my-card
+    img="https://static.wixstatic.com/media/449abe_5bcdc480851443d6b592c87fa3552f4e~mv2.jpg/v1/fill/w_764,h_764,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/cb-color.jpg"
+    title="Charlie Brown"
+    link = "https://www.youtube.com/watch?v=MmFfTJlIvhQ">
+    <p slot="desc">me when the football</p>
+  </my-card>
+
+  <my-card
+    img="https://media.tenor.com/QfkhhJkElT4AAAAe/yippee.png"
+    title="YIPPEE"
+    link = "https://www.youtube.com/watch?v=Qu7KFMn54Bk">
+    <p slot="desc">i ran out of charlies</p>
+  </my-card>
+
+  <my-card
+    img="https://i1.sndcdn.com/avatars-000325011141-iv3n02-t240x240.jpg"
+    title="barry bee benson"
+    link = "https://www.youtube.com/watch?v=W31e9meX9S4">
+    <p slot="desc">According to all known laws of aviation, there is no way a bee should be able to fly.
+      Its wings are too small to get its fat little body off the ground.
+      The bee, of course, flies anyway because bees don't care what humans think is impossible.</p>
+  </my-card>
 
   <!-- this is what is bringing in the definition for this tag -->
   <script type="module" src="./src/polaris-chip.js"></script>
